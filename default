@@ -1,10 +1,9 @@
 server {
-        listen 80;
-        location /hw0.html/ {
+    listen 80;
+    location / {
 		default_type "text/html";
 		alias /home/ubuntu/hw0repo/webpage/;
-		index hw0.html;
-        }
+    }
 
 	location /eliza {
 		proxy_pass http://127.0.0.1:5000;
