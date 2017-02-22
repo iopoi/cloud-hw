@@ -2,7 +2,7 @@ server {
         listen 80;
         location /hw0.html/ {
 		default_type "text/html";
-		alias /home/webpage/;
+		alias /home/ubuntu/hw0repo/webpage/;
 		index hw0.html;
         }
 
